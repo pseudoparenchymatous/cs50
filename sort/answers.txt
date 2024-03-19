@@ -1,0 +1,147 @@
+sort1 uses: Bubble Sort
+
+reversed5000.txt:
+real 0.071s
+user 0.052s
+sys  0.016s
+
+reversed10000.txt:
+real 0.271s
+user 0.176s
+sys  0.056s
+
+reversed50000.txt:
+real 5.770s
+user 5.084s
+sys  0.181s
+
+random5000.txt:
+real 0.152s
+user 0.080s
+sys  0.009s
+
+random10000.txt:
+real 0.298s
+user 0.240s
+sys  0.034s
+
+random50000.txt:
+real 7.733s
+user 6.820s
+sys  0.202s
+
+sorted5000.txt:
+real 0.041s
+user 0.003s
+sys  0.018s
+
+sorted10000.txt:
+real 0.081s
+user 0.003s
+sys  0.040s
+
+sorted50000.txt:
+real 0.653s
+user 0.027s
+sys  0.171s
+
+
+How do you know?: It has the best time in sorting the best case scenario (i.e. already sorted arrays)
+
+sort2 uses: Merge Sort
+
+reversed5000.txt:
+real 0.026s
+user 0.000s
+sys  0.019s
+
+reversed10000.txt:
+real 0.071s
+user 0.012s
+sys  0.024s
+
+reversed50000.txt:
+real 0.636s
+user 0.048s
+sys  0.141s
+
+random5000.txt:
+real 0.025s
+user 0.004s
+sys  0.018s
+
+random10000.txt:
+real 0.073s
+user 0.004s
+sys  0.033s
+
+random50000.txt:
+real 0.828s
+user 0.035s
+sys  0.177s
+
+sorted5000.txt:
+real 0.064s
+user 0.004s
+sys  0.020s
+
+sorted10000.txt:
+real 0.062s
+user 0.010s
+sys  0.031s
+
+sorted50000.txt:
+real 0.809s
+user 0.052s
+sys  0.127s
+
+How do you know?: It has the fastest time in sorting the worst cases (i.e reversed50000 and random50000)
+
+sort3 uses: Selection Sort
+
+reversed5000.txt:
+real 0.049s
+user 0.031s
+sys  0.015s
+
+reversed10000.txt:
+real 0.187s
+user 0.107s
+sys  0.040s
+
+reversed50000.txt:
+real 3.639s
+user 2.829s
+sys  0.179s
+
+random5000.txt:
+real 0.054s
+user 0.032s
+sys  0.014s
+
+random10000.txt:
+real 0.188s
+user 0.092s
+sys  0.051s
+
+random50000.txt:
+real 3.325s
+user 2.559s
+sys  0.228s
+
+sorted5000.txt:
+real 0.103s
+user 0.037s
+sys  0.018s
+
+sorted10000.txt:
+real 0.155s
+user 0.113s
+sys  0.027s
+
+sorted50000.txt:
+real 3.374s
+user 2.659s
+sys  0.219s
+
+How do you know?: It has the slowest sorting time in the best case (i.e already sorted arrays)

@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.recipe-photo-main {
+    width: 25vw;
+    position: absolute;
+    top: 25%;
+}
+
+.recipe-banner {
+    width: 100vw;
+    height: 300px;
+    background-color: bisque;
+}
+
+.recipe-main {
+    width: 100vw;
+    height: 90vh;
+    background-color: burlywood;
+}

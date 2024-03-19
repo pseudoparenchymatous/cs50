@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <title>Trivia!</title>
+    <script>
+        // TODO: Add code to check answers to questions
+
+        function turnRed(event) {
+            let thisObject = event.srcElement;
+            thisObject.style.backgroundColor = 'red';
+
+            document.querySelector('#result1').innerHTML = "Incorrect";
+        };
+
+        function turnGreen(event) {
+            let thisObject = event.srcElement;
+            thisObject.style.backgroundColor = 'green';
+            document.querySelector('#result1').innerHTML = "Correct";
+        };
+
+        function checkAnswer(event) {
+
+            event.preventDefault();
+
+            let result = document.querySelector('#result2');
+            let thisObject = document.querySelector('#question2');
+            let answer = thisObject.value.toUpperCase();
+            if (answer == "ARTEMIS") {
+                thisObject.style.backgroundColor = 'green';
+                result.innerHTML = "Correct!";
+            }
+            else {
+                thisObject.style.backgroundColor = 'red';
+                result.innerHTML = "Incorrect!";
+            }
+
+            return false;
+        };
+
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Trivia!</h1>
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <h2>Part 1: Multiple Choice </h2>
+            <hr>
+            <!-- TODO: Add multiple choice question here -->
+            <h3>What is the name for the 'Russian nesting dolls' where a series of different size dolls all fit inside
+                the largest doll?</h3>
+            <p id="result1"></p>
+            <button onclick="turnRed(event)">Maduetshka</button>
+            <button onclick="turnRed(event)">Maduoshka</button>
+            <button onclick="turnRed(event)">Masoloshka</button>
+            <button onclick="turnGreen(event)">Matrioshka</button>
+        </div>
+
+        <div class="section">
+            <h2>Part 2: Free Response</h2>
+            <hr>
+            <!-- TODO: Add free response question here -->
+            <h3>Who was the Greek goddess associated with the moon?</h3>
+            <p id="result2"></p>
+            <form onsubmit="checkAnswer(event)">
+                <input autocomplete="off" id="question2" type="text">
+                <input type="submit">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
